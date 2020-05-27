@@ -45,7 +45,6 @@ namespace UlearnAPI
         {
             services.AddSignalR();
 
-            Console.WriteLine(Configuration["DATABASE_URL"]);
             var builder = new PostgreSqlConnectionStringBuilder(Configuration["DATABASE_URL"])
             {
                 Pooling = true,
