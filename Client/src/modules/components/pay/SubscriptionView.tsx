@@ -23,7 +23,6 @@ export const SubscriptionView = (props: Props) => {
     } = props
 
     if (loading) {
-        return <Loader/>
     }
 
     const subscriptionHandler = () => {
