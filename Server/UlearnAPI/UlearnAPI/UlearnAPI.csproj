@@ -29,8 +29,8 @@
       <Folder Include="Migrations" />
     </ItemGroup>
 
-    <Target Name="PrePublishTarget" AfterTargets="Publish">
+   <!-- <Target Name="PrePublishTarget" AfterTargets="Publish">
         <Exec Command="dotnet-ef database update" />
-    </Target>
+    </Target>-->
 
 </Project>
