@@ -45,7 +45,7 @@ namespace UlearnAPI
         {
             services.AddSignalR();
 
-            var builder = new PostgreSqlConnectionStringBuilder(Configuration["DATABASE_URL"])
+            var builder = new PostgreSqlConnectionStringBuilder("postgres://pxerakwflnwiag:f97210215541b736da9c83c6637c91ea6ffb9c4ede18865aaeb2a73f23ac3caf@ec2-18-214-211-47.compute-1.amazonaws.com:5432/dfnqs9una17hh0")
             {
                 Pooling = true,
                 TrustServerCertificate = true,
