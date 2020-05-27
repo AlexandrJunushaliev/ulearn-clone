@@ -13,7 +13,7 @@ FROM build AS publish
 WORKDIR /src/UlearnAPI
 
 # dotnet ef tool
-RUN dotnet tool install --global dotnet-ef
+RUN dotnet tool install -g dotnet-ef --version 3.0.0-preview4.19216.3
 RUN dotnet tool restore
 RUN export PATH="$PATH:/root/.dotnet/tools"
 
