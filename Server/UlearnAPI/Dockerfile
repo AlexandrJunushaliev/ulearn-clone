@@ -14,6 +14,7 @@ WORKDIR /src/UlearnAPI
 
 # dotnet ef tool
 RUN dotnet tool install --global dotnet-ef
+RUN dotnet tool restore
 RUN export PATH="$PATH:/root/.dotnet/tools"
 
 RUN dotnet publish -c Release -o /src/publish
